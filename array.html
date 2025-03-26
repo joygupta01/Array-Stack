@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ab"></p>
+    <p id="join"></p>
+    <p id="pop1"></p>
+    <p id="pop2"></p>
+    <p id="rr"></p>
+    <script>
+        var Array= [
+            "Bugatti",
+            "Lamborghini",
+            "Porsche"
+        ];
+        document.getElementById("ab").innerHTML= Array[1];
+        document.getElementById("join").innerHTML= Array.join("^")
+        Array.pop()
+        document.getElementById("pop2").innerHTML= Array
+
+        function add(a,b){
+            return a+b;
+        }
+        function average(a,b){
+            return add(a,b)/2;
+        }
+       let result = average(50,20);
+       document.getElementById("rr").innerHTML = result;
+    </script> 
+</body>
+</html>
